@@ -21,7 +21,7 @@ module.exports = {
     'react/display-name': ['off'],
     'react/no-unescaped-entities': ['off'],
     indent: ['error', 2, {SwitchCase: 1}],
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', 'linux'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
     'no-console': ['warn', {allow: ['clear', 'info', 'error', 'dir', 'trace']}],
