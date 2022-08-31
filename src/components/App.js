@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import axios from 'axios';
+import axios from '../axios';
 
 class App extends React.Component {
   constructor() {
@@ -13,9 +13,7 @@ class App extends React.Component {
     this.getapiData();
   }
   async getapiData() {
-    let resp = await axios.get(
-      'https://local-banking-system.herokuapp.com/member',
-    );
+    let resp = await axios.fetchMembers();
     console.warn(resp.data);
     this.setState({data: resp.data});
   }
