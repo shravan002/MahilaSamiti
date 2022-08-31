@@ -3,12 +3,9 @@ import {Text, View} from 'react-native';
 import axios from '../axios';
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      data: [],
-    };
-  }
+  state = {
+    data: [],
+  };
   componentDidMount() {
     this.getapiData();
   }
