@@ -10,4 +10,13 @@ export default {
       console.error(error);
     }
   },
+
+  async fetchCommittee() {
+    try {
+      const resp = await axios.get(apiHost + '/committee/9');
+      return resp;
+    } catch (error) {
+      console.error(error);
+    }
+  },
 };
